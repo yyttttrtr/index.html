@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOOT EDITING | وكالة مونتاج فيديو احترافية</title>
+    <meta name="description"
+        content="SHOOT EDITING — وكالة مونتاج سينمائي متخصصة لصناع المحتوى، والأطباء، والمطاعم، والعلامات التجارية. نحوّل اللقطات العادية إلى محتوى بصري يصنع التأثير.">
+
+    <!-- Optimization Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://assets.mixkit.co">
+
+    <!-- Critical Assets Preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@400;700;900&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-logo" style="direction:ltr;unicode-bidi:isolate">SHOOT <span>EDITING</span></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo" style="direction:ltr;unicode-bidi:isolate">SHOOT <span>EDITING</span></div>
+        <div class="nav-links">
+            <a href="#hero">الرئيسية</a>
+            <a href="#portfolio">أعمالنا</a>
+            <a href="#why-us">لماذا نحن؟</a>
+            <a href="#contact">اتصل بنا</a>
+        </div>
+        <a href="https://wa.me/201120671623" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.9rem;">ابدأ
+            مشروعك</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop playsinline preload="auto" class="hero-video-bg">
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-working-on-a-video-editing-software-4835-large.mp4"
+                type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-glow"></div>
+
+        <!-- Tracking Lines -->
+        <div class="tracking-line t-line-h t-line-1"></div>
+        <div class="tracking-line t-line-v t-line-2"></div>
+
+        <!-- Floating Elements -->
+        <div class="floating-element timeline-ui">
+            <svg viewBox="0 0 400 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="10" rx="5" fill="rgba(255,255,255,0.1)" />
+                <rect x="50" width="80" height="10" rx="5" fill="#ff0000" />
+                <rect x="180" width="120" height="10" rx="5" fill="#ff0000" opacity="0.6" />
+                <line x1="200" y1="0" x2="200" y2="50" stroke="#ff0000" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="floating-element waveform">
+            <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 30 L10 10 L20 50 L30 20 L40 40 L50 10 L60 55 L70 30 L80 45 L90 15 L100 35 L110 5 L120 40 L130 25 L140 50 L150 10 L160 30 L170 55 L180 20 L190 40 L200 30"
+                    stroke="#ff0000" stroke-width="2" />
+            </svg>
+        </div>
+        <i class="fa-solid fa-play floating-element play-icon"></i>
+
+        <p class="hero-eyebrow">Video Production Studio</p>
+        <h1 class="gradient-text">
+            <span class="line">نحوّل اللقطات العادية</span>
+            <span class="line">إلى محتوى يصنع التأثير</span>
+        </h1>
+        <p>مونتاج احترافي لصناع المحتوى، والأطباء،<br>والمطاعم، والعلامات التجارية</p>
+
+        <div class="hero-btns">
+            <a href="#portfolio" class="btn btn-primary">شاهد أعمالنا</a>
+            <a href="https://wa.me/201120671623" class="btn btn-outline">ابدأ مشروعك</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title reveal">
+            <h2 class="gradient-text">معرض الأعمال</h2>
+            <p>نخبة من المشاريع التي صنعنا من خلالها الفارق</p>
+        </div>
+
+        <!-- Category Cards Container -->
+        <div class="portfolio-categories" id="portfolioCategories">
+            <div class="category-card glass-panel reveal reveal-delay-1" onclick="openGallery('medical')">
+                <i class="fa-solid fa-user-doctor category-icon"></i>
+                <h3>Medical Videos</h3>
+                <p>محتوى طبي احترافي</p>
+            </div>
+            <div class="category-card glass-panel reveal reveal-delay-2" onclick="openGallery('restaurants')">
+                <i class="fa-solid fa-utensils category-icon"></i>
+                <h3>Restaurant Videos</h3>
+                <p>مطاعم وكافيهات</p>
+            </div>
+            <div class="category-card glass-panel reveal reveal-delay-3" onclick="openGallery('products')">
+                <i class="fa-solid fa-box category-icon"></i>
+                <h3>Product Videos</h3>
+                <p>إعلانات منتجات</p>
+            </div>
+            <div class="category-card glass-panel reveal reveal-delay-4" onclick="openGallery('creators')">
+                <i class="fa-solid fa-users-viewfinder category-icon"></i>
+                <h3>Content Creator Videos</h3>
+                <p>صناعة محتوى</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Empty Gallery (Hidden by Default) -->
+        <div id="videoGalleryWrapper" class="video-gallery hidden">
+            <div class="gallery-header">
+                <h3 id="galleryTitle" class="gradient-text">Category Name</h3>
+                <button class="close-btn" onclick="closeGallery()" title="إغلاق">
+                    <i class="fa-solid fa-xmark"></i> اغلاق
+                </button>
+            </div>
+            <div class="videos-grid" id="galleryGrid">
+                <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 0; color: var(--text-gray);">
+                    <i class="fa-solid fa-video-slash" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                    <p style="font-size: 1.2rem;">لم يتم رفع فيديوهات في هذا القسم بعد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-title reveal" style="direction:ltr;unicode-bidi:isolate">
+                <h2 class="gradient-text">WHY CHOOSE SHOOT EDITING</h2>
+                <p>We don't just edit videos — we create visual experiences.</p>
+            </div>
+            <div class="features">
+                <div class="feature-item reveal reveal-delay-1">
+                    <h4>Professional Quality</h4>
+                    <p>Using industry-leading software and cutting-edge techniques.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-2">
+                    <h4>Fast Delivery</h4>
+                    <p>We value your time and strictly adhere to deadlines.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-3">
+                    <h4>Creative Ideas</h4>
+                    <p>An artistic vision that makes your content stand out.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-1">
+                    <h4>Real Results</h4>
+                    <p>Videos designed to drive engagement and grow your brand.</p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats" style="direction:ltr;unicode-bidi:isolate">
+                <div class="stat-item reveal reveal-delay-1">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Videos Delivered</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <span class="stat-number">Millions+</span>
+                    <span class="stat-label">of Views</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title reveal">
+            <h2 class="gradient-text">ابدأ مشروعك القادم</h2>
+            <p>تواصل معنا اليوم لتحويل رؤيتك إلى واقع ملموس</p>
+        </div>
+        <div class="contact-container">
+            <div class="social-links reveal">
+                <a href="https://wa.me/201120671623" class="social-card glass-panel"
+                    style="border-color: #4ed325; box-shadow: 0 0 20px rgba(37, 211, 102, 0.1);">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                    <div>
+                        <strong>واتساب</strong>
+                        <p>تحدث معنا مباشرة</p>
+                    </div>
+                </a>
+                <a href="https://instagram.com/shoot_editing66" class="social-card glass-panel">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <strong>إنستغرام</strong>
+                        <p>تابع جديد أعمالنا</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61584010657588" class="social-card glass-panel">
+                    <i class="fab fa-facebook"></i>
+                    <div>
+                        <strong>فيسبوك</strong>
+                        <p>تواصل عبر الرسائل</p>
+                    </div>
+                </a>
+                <a href="mailto:info@shootediting.com" class="social-card glass-panel">
+                    <i class="far fa-envelope"></i>
+                    <div>
+                        <strong>البريد الإلكتروني</strong>
+                        <p>ارسل تفاصيل مشروعك</p>
+                    </div>
+                </a>
+            </div>
+
+            <form class="contact-form glass-panel" style="padding: 40px;">
+                <div class="form-group">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="أخبرنا عن مشروعك..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p style="direction:ltr;unicode-bidi:isolate">&copy; 2024 <span class="brand-name">SHOOT EDITING</span>. All
+            rights reserved.</p>
+        <div style="margin-top: 10px; color: var(--text-gray); font-size: 0.8rem; direction:ltr;unicode-bidi:isolate">
+            Professionally designed by <span class="brand-name">SHOOT EDITING</span> Team
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
